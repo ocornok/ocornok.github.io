@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivinhe o Número</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="game-container">
+    <h3>  Bem-vindo! Tente adivinhar o número secreto entre 1 e 100.</h3>
+    <h3>Seu objetivo é acertar o número com o menor número possível de tentativas.</h3>
+    <h1>Adivinhe o Número</h1>
+    <p id="message">Tente adivinhar o número entre 1 e 100.</p>
+    <input type="number" id="guessInput" placeholder="Digite sua resposta">
+    <button id="guessButton">Adivinhar</button>
+    <button id="newNumberButton">Novo Número</button>
+    
+  <ul id="attemptsList"></ul>
+  <div id="legend">
+    <p><span class="legend-color" style="background-color: #3498db;"></span> Número menor</p>
+    <p><span class="legend-color" style="background-color: #d9534f;"></span> Número maior</p>
+    <p><span class="legend-color" style="background-color: #f0ad4e;"></span> Perto</p>
+  </div>
+    <script src="game.js"></script>
+  </div>
+
+</body>
+</html>
